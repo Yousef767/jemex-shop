@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./media/t-icon.svg" type="image/x-icon" />
+  <link rel="shortcut icon" href="./media/t-icon.svg" />
+  <link rel="apple-touch-icon" href="./media/t-icon.svg" />
+  <meta name="color-scheme" content="light only">
+  <link rel="stylesheet" href="./scss/style.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+  <title>JemexShop</title>
+</head>
+
+<body>
+  <div class="LandS">
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <div class="textStroke"></div>
+    <div class="gradient">
+      <div class="shapesInner">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="formInner">
+      <form action="" id="login-form">
+        <h1>Sign in</h1>
+        <div class="input">
+          <span >Enter your Username</span>
+          <input type="text" placeholder="Username" id="username" spellcheck="false" required>
+        </div>
+        <div class="input">
+          <span >Enter your Password</span>
+          <input type="password" placeholder="Password" id="password" spellcheck="false" required>
+        </div>
+        <div class="capt">
+          <a class="forgot" href="./Sign-Up/reset.html">Forgot Password</a>
+          <div class="d-flex">
+            <input type="text" name="captcha_code" id="captcha_code" spellcheck="false" maxlength="5"
+              class="form-control" placeholder="Captcha Code" style="text-align:center;" required="" />
+            <img id="captcha" src="securimage_show.php" alt="CAPTCHA Image" class="img-fluid px-2 mx-2" />
+            <a href="#"
+              onclick="document.getElementById('captcha').src = 'securimage_show.php?' + Math.random(); return false"
+              class="btn btn-primary"><i class="fa fa-refresh fa-fw" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="subBtn">
+          <span>No Account ? <a href="./Sign-Up/signup.html"> Sign up</a></span>
+          <button type="submit">Sign in</button>
+          <div class="rem"><input type="checkbox"> Rememebr me</div>
+        </div>
+      </form>
+      <div class="welc">
+        <div class="head">
+          <h1>Welcome to</h1>
+          <img src="./media/logo.png" alt="">
+        </div>
+        <div class="faqs">
+          <div class="fa active">
+            <span>What is Jemex <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_258_1607)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.30031 5.11965C2.35111 5.06872 2.41146 5.02831 2.4779 5.00074C2.54434 4.97318 2.61557 4.95898 2.6875 4.95898C2.75943 4.95898 2.83066 4.97318 2.8971 5.00074C2.96354 5.02831 3.02389 5.06872 3.07469 5.11965L9.25 11.2961L15.4253 5.11965C15.4762 5.0688 15.5365 5.02847 15.603 5.00095C15.6694 4.97343 15.7406 4.95927 15.8125 4.95927C15.8844 4.95927 15.9556 4.97343 16.022 5.00095C16.0885 5.02847 16.1488 5.0688 16.1997 5.11965C16.2505 5.1705 16.2909 5.23086 16.3184 5.29729C16.3459 5.36373 16.3601 5.43493 16.3601 5.50684C16.3601 5.57874 16.3459 5.64995 16.3184 5.71638C16.2909 5.78282 16.2505 5.84318 16.1997 5.89402L9.63719 12.4565C9.58639 12.5075 9.52604 12.5479 9.4596 12.5754C9.39316 12.603 9.32193 12.6172 9.25 12.6172C9.17807 12.6172 9.10684 12.603 9.0404 12.5754C8.97396 12.5479 8.91361 12.5075 8.86281 12.4565L2.30031 5.89402C2.24939 5.84322 2.20898 5.78288 2.18141 5.71644C2.15384 5.65 2.13965 5.57877 2.13965 5.50684C2.13965 5.4349 2.15384 5.36368 2.18141 5.29724C2.20898 5.2308 2.24939 5.17045 2.30031 5.11965Z"
+                    fill="#212529" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_258_1607">
+                    <rect width="17.5" height="17.5" fill="white" transform="translate(0.5 0.0390625)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <p><strong>What is Jemex</strong>
+              Jemex.net is a broker website dedicated for buy or selling items
+              that help you to develop your work.</p>
+          </div>
+          <div class="fa">
+            <span>What Jemex Provides <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_258_1607)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.30031 5.11965C2.35111 5.06872 2.41146 5.02831 2.4779 5.00074C2.54434 4.97318 2.61557 4.95898 2.6875 4.95898C2.75943 4.95898 2.83066 4.97318 2.8971 5.00074C2.96354 5.02831 3.02389 5.06872 3.07469 5.11965L9.25 11.2961L15.4253 5.11965C15.4762 5.0688 15.5365 5.02847 15.603 5.00095C15.6694 4.97343 15.7406 4.95927 15.8125 4.95927C15.8844 4.95927 15.9556 4.97343 16.022 5.00095C16.0885 5.02847 16.1488 5.0688 16.1997 5.11965C16.2505 5.1705 16.2909 5.23086 16.3184 5.29729C16.3459 5.36373 16.3601 5.43493 16.3601 5.50684C16.3601 5.57874 16.3459 5.64995 16.3184 5.71638C16.2909 5.78282 16.2505 5.84318 16.1997 5.89402L9.63719 12.4565C9.58639 12.5075 9.52604 12.5479 9.4596 12.5754C9.39316 12.603 9.32193 12.6172 9.25 12.6172C9.17807 12.6172 9.10684 12.603 9.0404 12.5754C8.97396 12.5479 8.91361 12.5075 8.86281 12.4565L2.30031 5.89402C2.24939 5.84322 2.20898 5.78288 2.18141 5.71644C2.15384 5.65 2.13965 5.57877 2.13965 5.50684C2.13965 5.4349 2.15384 5.36368 2.18141 5.29724C2.20898 5.2308 2.24939 5.17045 2.30031 5.11965Z"
+                    fill="#212529" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_258_1607">
+                    <rect width="17.5" height="17.5" fill="white" transform="translate(0.5 0.0390625)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <p><strong>What is Jemex</strong>
+              Jemex.net is a broker website dedicated for buy or selling items
+              that help you to develop your work.</p>
+          </div>
+          <div class="fa">
+            <span>Jemex Terms of Service <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_258_1607)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.30031 5.11965C2.35111 5.06872 2.41146 5.02831 2.4779 5.00074C2.54434 4.97318 2.61557 4.95898 2.6875 4.95898C2.75943 4.95898 2.83066 4.97318 2.8971 5.00074C2.96354 5.02831 3.02389 5.06872 3.07469 5.11965L9.25 11.2961L15.4253 5.11965C15.4762 5.0688 15.5365 5.02847 15.603 5.00095C15.6694 4.97343 15.7406 4.95927 15.8125 4.95927C15.8844 4.95927 15.9556 4.97343 16.022 5.00095C16.0885 5.02847 16.1488 5.0688 16.1997 5.11965C16.2505 5.1705 16.2909 5.23086 16.3184 5.29729C16.3459 5.36373 16.3601 5.43493 16.3601 5.50684C16.3601 5.57874 16.3459 5.64995 16.3184 5.71638C16.2909 5.78282 16.2505 5.84318 16.1997 5.89402L9.63719 12.4565C9.58639 12.5075 9.52604 12.5479 9.4596 12.5754C9.39316 12.603 9.32193 12.6172 9.25 12.6172C9.17807 12.6172 9.10684 12.603 9.0404 12.5754C8.97396 12.5479 8.91361 12.5075 8.86281 12.4565L2.30031 5.89402C2.24939 5.84322 2.20898 5.78288 2.18141 5.71644C2.15384 5.65 2.13965 5.57877 2.13965 5.50684C2.13965 5.4349 2.15384 5.36368 2.18141 5.29724C2.20898 5.2308 2.24939 5.17045 2.30031 5.11965Z"
+                    fill="#212529" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_258_1607">
+                    <rect width="17.5" height="17.5" fill="white" transform="translate(0.5 0.0390625)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <p><strong>What is Jemex</strong>
+              Jemex.net is a broker website dedicated for buy or selling items
+              that help you to develop your work.</p>
+          </div>
+          <div class="fa">
+            <span>Jemex's Privacy Policy<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_258_1607)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.30031 5.11965C2.35111 5.06872 2.41146 5.02831 2.4779 5.00074C2.54434 4.97318 2.61557 4.95898 2.6875 4.95898C2.75943 4.95898 2.83066 4.97318 2.8971 5.00074C2.96354 5.02831 3.02389 5.06872 3.07469 5.11965L9.25 11.2961L15.4253 5.11965C15.4762 5.0688 15.5365 5.02847 15.603 5.00095C15.6694 4.97343 15.7406 4.95927 15.8125 4.95927C15.8844 4.95927 15.9556 4.97343 16.022 5.00095C16.0885 5.02847 16.1488 5.0688 16.1997 5.11965C16.2505 5.1705 16.2909 5.23086 16.3184 5.29729C16.3459 5.36373 16.3601 5.43493 16.3601 5.50684C16.3601 5.57874 16.3459 5.64995 16.3184 5.71638C16.2909 5.78282 16.2505 5.84318 16.1997 5.89402L9.63719 12.4565C9.58639 12.5075 9.52604 12.5479 9.4596 12.5754C9.39316 12.603 9.32193 12.6172 9.25 12.6172C9.17807 12.6172 9.10684 12.603 9.0404 12.5754C8.97396 12.5479 8.91361 12.5075 8.86281 12.4565L2.30031 5.89402C2.24939 5.84322 2.20898 5.78288 2.18141 5.71644C2.15384 5.65 2.13965 5.57877 2.13965 5.50684C2.13965 5.4349 2.15384 5.36368 2.18141 5.29724C2.20898 5.2308 2.24939 5.17045 2.30031 5.11965Z"
+                    fill="#212529" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_258_1607">
+                    <rect width="17.5" height="17.5" fill="white" transform="translate(0.5 0.0390625)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <p><strong>What is Jemex</strong>
+              Jemex.net is a broker website dedicated for buy or selling items
+              that help you to develop your work.</p>
+          </div>
+          <div class="fa">
+            <span>Jemex Terms of Service <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_258_1607)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.30031 5.11965C2.35111 5.06872 2.41146 5.02831 2.4779 5.00074C2.54434 4.97318 2.61557 4.95898 2.6875 4.95898C2.75943 4.95898 2.83066 4.97318 2.8971 5.00074C2.96354 5.02831 3.02389 5.06872 3.07469 5.11965L9.25 11.2961L15.4253 5.11965C15.4762 5.0688 15.5365 5.02847 15.603 5.00095C15.6694 4.97343 15.7406 4.95927 15.8125 4.95927C15.8844 4.95927 15.9556 4.97343 16.022 5.00095C16.0885 5.02847 16.1488 5.0688 16.1997 5.11965C16.2505 5.1705 16.2909 5.23086 16.3184 5.29729C16.3459 5.36373 16.3601 5.43493 16.3601 5.50684C16.3601 5.57874 16.3459 5.64995 16.3184 5.71638C16.2909 5.78282 16.2505 5.84318 16.1997 5.89402L9.63719 12.4565C9.58639 12.5075 9.52604 12.5479 9.4596 12.5754C9.39316 12.603 9.32193 12.6172 9.25 12.6172C9.17807 12.6172 9.10684 12.603 9.0404 12.5754C8.97396 12.5479 8.91361 12.5075 8.86281 12.4565L2.30031 5.89402C2.24939 5.84322 2.20898 5.78288 2.18141 5.71644C2.15384 5.65 2.13965 5.57877 2.13965 5.50684C2.13965 5.4349 2.15384 5.36368 2.18141 5.29724C2.20898 5.2308 2.24939 5.17045 2.30031 5.11965Z"
+                    fill="#212529" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_258_1607">
+                    <rect width="17.5" height="17.5" fill="white" transform="translate(0.5 0.0390625)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <p><strong>What is Jemex</strong>
+              Jemex.net is a broker website dedicated for buy or selling items
+              that help you to develop your work.</p>
+          </div>
+          <div class="fa">
+            <span>Jemex Warranty<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_258_1607)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.30031 5.11965C2.35111 5.06872 2.41146 5.02831 2.4779 5.00074C2.54434 4.97318 2.61557 4.95898 2.6875 4.95898C2.75943 4.95898 2.83066 4.97318 2.8971 5.00074C2.96354 5.02831 3.02389 5.06872 3.07469 5.11965L9.25 11.2961L15.4253 5.11965C15.4762 5.0688 15.5365 5.02847 15.603 5.00095C15.6694 4.97343 15.7406 4.95927 15.8125 4.95927C15.8844 4.95927 15.9556 4.97343 16.022 5.00095C16.0885 5.02847 16.1488 5.0688 16.1997 5.11965C16.2505 5.1705 16.2909 5.23086 16.3184 5.29729C16.3459 5.36373 16.3601 5.43493 16.3601 5.50684C16.3601 5.57874 16.3459 5.64995 16.3184 5.71638C16.2909 5.78282 16.2505 5.84318 16.1997 5.89402L9.63719 12.4565C9.58639 12.5075 9.52604 12.5479 9.4596 12.5754C9.39316 12.603 9.32193 12.6172 9.25 12.6172C9.17807 12.6172 9.10684 12.603 9.0404 12.5754C8.97396 12.5479 8.91361 12.5075 8.86281 12.4565L2.30031 5.89402C2.24939 5.84322 2.20898 5.78288 2.18141 5.71644C2.15384 5.65 2.13965 5.57877 2.13965 5.50684C2.13965 5.4349 2.15384 5.36368 2.18141 5.29724C2.20898 5.2308 2.24939 5.17045 2.30031 5.11965Z"
+                    fill="#212529" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_258_1607">
+                    <rect width="17.5" height="17.5" fill="white" transform="translate(0.5 0.0390625)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <p><strong>What is Jemex</strong>
+              Jemex.net is a broker website dedicated for buy or selling items
+              that help you to develop your work.</p>
+          </div>
+          <div class="fa">
+            <span>Jemex Limitation Of Liability<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_258_1607)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.30031 5.11965C2.35111 5.06872 2.41146 5.02831 2.4779 5.00074C2.54434 4.97318 2.61557 4.95898 2.6875 4.95898C2.75943 4.95898 2.83066 4.97318 2.8971 5.00074C2.96354 5.02831 3.02389 5.06872 3.07469 5.11965L9.25 11.2961L15.4253 5.11965C15.4762 5.0688 15.5365 5.02847 15.603 5.00095C15.6694 4.97343 15.7406 4.95927 15.8125 4.95927C15.8844 4.95927 15.9556 4.97343 16.022 5.00095C16.0885 5.02847 16.1488 5.0688 16.1997 5.11965C16.2505 5.1705 16.2909 5.23086 16.3184 5.29729C16.3459 5.36373 16.3601 5.43493 16.3601 5.50684C16.3601 5.57874 16.3459 5.64995 16.3184 5.71638C16.2909 5.78282 16.2505 5.84318 16.1997 5.89402L9.63719 12.4565C9.58639 12.5075 9.52604 12.5479 9.4596 12.5754C9.39316 12.603 9.32193 12.6172 9.25 12.6172C9.17807 12.6172 9.10684 12.603 9.0404 12.5754C8.97396 12.5479 8.91361 12.5075 8.86281 12.4565L2.30031 5.89402C2.24939 5.84322 2.20898 5.78288 2.18141 5.71644C2.15384 5.65 2.13965 5.57877 2.13965 5.50684C2.13965 5.4349 2.15384 5.36368 2.18141 5.29724C2.20898 5.2308 2.24939 5.17045 2.30031 5.11965Z"
+                    fill="#212529" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_258_1607">
+                    <rect width="17.5" height="17.5" fill="white" transform="translate(0.5 0.0390625)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <p><strong>What is Jemex</strong>
+              Jemex.net is a broker website dedicated for buy or selling items
+              that help you to develop your work.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./js/faqs.js"></script>
+<script src="./js/login.js"></script>
+<script src="./js/message.js"></script>
+
+</html>

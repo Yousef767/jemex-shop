@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../media/t-icon.svg" type="image/x-icon" />
+  <link rel="shortcut icon" href="../media/t-icon.svg" />
+  <link rel="apple-touch-icon" href="../media/t-icon.svg" />
+  <meta name="color-scheme" content="light only">
+  <link rel="stylesheet" href="../scss/style.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+  <title>JemexShop</title>
+</head>
+
+<body>
+  <div class="LandS sup">
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <div class="textStroke"></div>
+    <div class="gradient">
+      <div class="shapesInner">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="formInner">
+      <div class="welc">
+        <div class="head">
+          <h1>Welcome to</h1>
+          <img src="../media/logo.png" alt="">
+        </div>
+        <div class="ghf">
+          <img src="../media/img/su.png" alt="">
+        </div>
+      </div>
+      <form action="" id="signup-form">
+        <h1>Sign Up</h1>
+        <div class="input">
+          <span>Enter your username</span>
+          <input type="text" placeholder="Username" id="username" spellcheck="false" required>
+        </div>
+        <div class="input">
+          <span>Email</span>
+          <input type="text" placeholder="your@example.com" id="email" spellcheck="false" required>
+        </div>
+        <div class="input">
+          <span>Enter your Password</span>
+          <input type="password" placeholder="Password" id="password" spellcheck="false" required>
+        </div>
+        <div class="input">
+          <span>Confirm your Password</span>
+          <input type="password" placeholder="Confirm Password" id="confirm-password" spellcheck="false" required>
+        </div>
+        <div class="capt">
+          <div class="d-flex">
+            <input type="text" name="captcha_code" id="captcha_code" maxlength="5" spellcheck="false"
+              class="form-control" placeholder="Captcha Code" style="text-align:center;" required="" />
+            <img id="captcha" src="../securimage_show.php" alt="CAPTCHA Image" class="img-fluid px-2 mx-2" />
+            <a href="#"
+              onclick="document.getElementById('captcha').src = '../securimage_show.php?' + Math.random(); return false"
+              class="btn btn-primary"><i class="fa fa-refresh fa-fw" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="subBtn">
+          <span>Already have an account? <a href="../index.html"> Sign In</a></span>
+          <button type="submit">Sign up </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+<script src="../js/faqs.js"></script>
+<script src="../js/signup.js"></script>
+<script src="../js/message.js"></script>
+
+</html>
