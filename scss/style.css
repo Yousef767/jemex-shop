@@ -2197,7 +2197,7 @@ nav::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   animation: alertMessage 300ms ease forwards;
-  z-index: 15;
+  z-index: 20;
 }
 .popMess span {
   padding: 7px 15px;
@@ -2371,22 +2371,16 @@ nav::-webkit-scrollbar {
   top: 0;
   left: 0;
   position: fixed;
-  z-index: 40;
+  z-index: 19;
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to bottom right, #1f65f0, #0037a4);
-  animation: hide 400ms ease 2500ms forwards;
 }
 .loaderPage img:nth-child(2) {
   width: 80px;
   margin-left: 25px;
 }
 
-@keyframes hide {
-  100% {
-    top: 100%;
-  }
-}
 .loaderLogo img {
   width: 250px;
 }
