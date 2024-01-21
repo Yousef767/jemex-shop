@@ -6,6 +6,7 @@ const dataChart = {
     {
       data: [300, 200, 100],
       backgroundColor: ["#6359E9", "#64CFF6", "#3A3A5A"],
+      borderRadius: 7,
     },
   ],
 };
@@ -14,6 +15,7 @@ const dataChart = {
 new Chart(ctx, {
   type: "doughnut",
   data: dataChart,
+  
   options: {
     plugins: {
       legend: {

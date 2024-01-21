@@ -29,15 +29,15 @@ navInner.innerHTML=`
         </ul>
         <ul class="listLinks pb0">
           <h3 class="pl10">Items</h3>
-          <li><a href="./items.html">Shells <span>0</span></a></li>
-          <li><a href="./items.html">cPanels <span>0</span></a></li>
-          <li><a href="./items.html">RDPs <span>0</span></a></li>
-          <li><a href="./items.html">SSH/WHMs <span>0</span></a></li>
-          <li><a href="./items.html">SMTPs <span>0</span></a></li>
-          <li><a href="./items.html">Mailers <span>0</span></a></li>
-          <li><a href="./items.html">Webmails <span>0</span></a></li>
-          <li><a href="./items.html">Leads <span>0</span></a></li>
-          <li><a href="./items.html">Accounts <span>0</span></a></li>
+          <li><a href="./Shells.html">Shells <span>0</span></a></li>
+          <li><a href="./Shells.html">cPanels <span>0</span></a></li>
+          <li><a href="./Shells.html">RDPs <span>0</span></a></li>
+          <li><a href="./Shells.html">SSH/WHMs <span>0</span></a></li>
+          <li><a href="./Shells.html">SMTPs <span>0</span></a></li>
+          <li><a href="./Shells.html">Mailers <span>0</span></a></li>
+          <li><a href="./Shells.html">Webmails <span>0</span></a></li>
+          <li><a href="./Shells.html">Leads <span>0</span></a></li>
+          <li><a href="./Shells.html">Accounts <span>0</span></a></li>
         </ul>
         <div class="account">
           <div class="accInfo">
@@ -49,10 +49,10 @@ navInner.innerHTML=`
           </div>
           <img class="arrow" src="../media/navIcons/arrow-down.png" alt="">
           <ul class="dropMenu dropAcc">
-            <li><a href="##"><i class="fa-solid fa-user"></i>Edit Profile</a></li>
-            <li><a href="##"><i class="fa-solid fa-circle-dollar"></i> Earn Money </a></li>
-            <li><a href="##"><i class="fa-solid fa-boxes-stacked"></i>My Orders </a></li>
-            <li><a href="##"><i class="fa-sharp fa-solid fa-dollar-sign"></i>Add Balance </a></li>
+            <li><a href="../Buyer-Pages/account-information.html"><i class="fa-solid fa-user"></i>Edit Profile</a></li>
+            <li><a href="../Buyer-Pages/Referral-System-Statistics.html"><i class="fa-solid fa-circle-dollar"></i> Earn Money </a></li>
+            <li><a href="../Buyer-Pages/my-orders.html"><i class="fa-solid fa-boxes-stacked"></i>My Orders </a></li>
+            <li><a href="../Buyer-Pages/add-balance.html"><i class="fa-sharp fa-solid fa-dollar-sign"></i>Add Balance </a></li>
             <li class="LogOut"><a href="##"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out </a></li>
           </ul>
         </div>

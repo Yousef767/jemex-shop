@@ -76,6 +76,7 @@ $body: #eef6ff;
 $gray: #878790;
 $text: #718096;
 $pink: #ff4857;
+$green: #00800d;
 $lightblack: #3a3a49;
 $shadow: rgba(34, 105, 245, 0.1);
 
@@ -145,14 +146,14 @@ body {
   }
 }
 html {
-  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
-html,
 body {
-  max-width: 100%;
-  overflow-x: hidden;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
 a {
@@ -624,7 +625,11 @@ nav {
 
 .table {
   width: 100%;
-  overflow: auto;
+  overflow-x: scroll;
+  //user-select: none;
+  //overflow-x: hidden;
+  //position: relative;
+  //-webkit-overflow-scrolling: touch;
   &::-webkit-scrollbar {
     height: 10px;
   }
@@ -784,7 +789,6 @@ nav {
 .pagination {
   width: 100%;
   @include flex();
-  padding: 20px 0;
   gap: 10px;
 }
 .page {
@@ -817,6 +821,7 @@ nav {
   @include flex();
   position: relative;
   select {
+    cursor: pointer;
     @include noBorder();
     height: 40px;
     padding: 0 20px;
@@ -830,6 +835,10 @@ nav {
     right: 0px;
     width: 15px;
     margin-bottom: 5px;
+  }
+  .r15 {
+    right: 15px;
+    margin-bottom: 0;
   }
 }
 #menu {
@@ -1045,6 +1054,34 @@ nav {
   }
   textarea {
     padding: 15px;
+  }
+}
+.input2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 30px;
+  input,
+  select,
+  textarea {
+    width: 100%;
+    @include noBorder();
+    padding: 0 15px;
+    height: 55px;
+    border: 1px solid $main;
+    background-color: #fff;
+    border-radius: 9px;
+    transition: 0.2s all ease;
+    font-size: 1em;
+    &:focus {
+      border: 1px solid $main;
+    }
+  }
+  textarea {
+    padding: 15px;
+    height: 200px;
+    resize: none;
   }
 }
 .d-flex {
@@ -1966,6 +2003,18 @@ nav {
   border-radius: 5px;
   text-transform: capitalize;
   cursor: pointer;
+  gap: 3px;
+  position: relative;
+  span{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    padding:1px 3px;
+    background-color: $pink;
+    color: #fff;
+    font-size: .8em;
+    border-radius: 4px;
+  }
 }
 .qr-data {
   width: calc(100% - 450px);
@@ -2002,6 +2051,7 @@ nav {
   gap: 5px;
   align-items: center;
   color: $main;
+  cursor: pointer;
   img {
     width: 25px;
     height: 25px;
@@ -2079,7 +2129,7 @@ nav {
   width: 100%;
   @include flex();
   animation: alertMessage 300ms ease forwards;
-  z-index: 5;
+  z-index: 15;
   span {
     padding: 7px 15px;
     color: #fff;
@@ -2365,11 +2415,11 @@ nav {
   .account {
     flex-direction: column-reverse;
     padding-top: 10px;
-
     .dropAcc {
       position: relative;
       bottom: auto;
       padding-top: 0;
+      padding-bottom: 20px;
     }
     .arrow {
       display: none;
@@ -2433,12 +2483,13 @@ nav {
       width: 100%;
       display: flex;
       justify-content: left;
-      gap: 20px;
+      gap: 15px;
       align-items: center;
       padding-left: 20px;
       font-family: f300;
       color: #fff;
       font-size: 1.3em;
+      white-space: nowrap;
       img {
         width: 30px;
         height: 30px;
@@ -2583,10 +2634,11 @@ nav {
     padding: 3px 0;
   }
   a {
-    font-size: 0.9em;
+    font-size: 0.8em;
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
     gap: 5px;
     color: $gray;
     img {
@@ -2838,7 +2890,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+
   gap: 30px;
   .tBox {
     flex-grow: 1;
@@ -2906,6 +2958,14 @@ nav {
 }
 .totals {
   width: 250px !important;
+  .totl {
+    border-bottom: 1px solid $main;
+    &:last-child {
+      border: none;
+    }
+  }
+}
+.totals2 {
   .totl {
     border-bottom: 1px solid $main;
     &:last-child {
@@ -2994,6 +3054,17 @@ nav {
   border-radius: 7px;
   color: $main;
   cursor: pointer;
+  gap: 10px;
+  img {
+    width: 20px;
+    object-fit: contain;
+  }
+}
+.suxFil.w15 {
+  img {
+    width: 15px;
+    object-fit: contain;
+  }
 }
 .fdcT {
   display: flex;
@@ -3020,6 +3091,11 @@ nav {
     border-radius: 10px;
     height: 37px;
     font-size: 0.9em;
+  }
+  h3 {
+    color: #fff;
+    line-height: 1;
+    font-family: f400;
   }
 }
 .btn44.w20 {
@@ -3380,7 +3456,7 @@ nav {
     outline: none;
     background-color: #fff;
     border-radius: 5px;
-    padding:0 15px ;
+    padding: 0 15px;
     font-size: 1em;
   }
   input::placeholder {
@@ -3948,6 +4024,7 @@ nav {
   align-items: center;
   margin-top: 0;
   padding-right: 10%;
+  padding-top: 20px;
   gap: 30px;
   .wrkbtn55 {
     align-items: center;
@@ -4000,3 +4077,885 @@ nav {
   }
 }
 
+.fa-lock {
+  color: $main;
+}
+.us {
+  color: $main;
+}
+#del-btn {
+  color: #ff4857;
+  font-size: 2em;
+  cursor: pointer;
+}
+.delMain {
+  color: $main;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+.fa-eye,
+.fa-pen {
+  color: #000;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.adStatus {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+.statx1 {
+  @include flex();
+  text-align: center;
+  flex-direction: column;
+  color: #fff;
+  span {
+    font-family: f600;
+  }
+}
+@media (max-width: 450px) {
+  .gh5879 {
+    h3 {
+      padding-bottom: 20px;
+    }
+  }
+  .adStatus {
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+.chartAlx {
+  width: 100%;
+  @include defaultBox();
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-family: f400;
+    font-size: 1.7em;
+    padding-bottom: 20px;
+  }
+}
+.dxDa {
+  width: 100%;
+  display: flex;
+}
+.chartData {
+  width: calc(100% - 150px);
+  display: flex;
+  align-items: center;
+}
+.legends {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  gap: 10px;
+  padding-bottom: 40px;
+  justify-content: center;
+}
+.legend {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  gap: 10px;
+  p {
+    font-size: 0.9em;
+    width: 50px;
+    font-family: f500;
+    white-space: nowrap;
+  }
+  span {
+    width: 70px;
+    height: 15px;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .legends {
+    display: none;
+  }
+  .chartData {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .chartAlx {
+    padding: 20px 5px;
+    color: #00000000;
+  }
+}
+.fc50 {
+  font-family: f400;
+}
+.pb50 {
+  padding-bottom: 50px;
+}
+.paInx {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .pagination {
+    width: fit-content;
+  }
+  .m5x2 {
+    margin: 0;
+  }
+}
+@media (max-width: 550px) {
+  .paInx {
+    flex-direction: column-reverse;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.chatInner {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  padding-bottom: 70px;
+}
+.chatMes {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  gap: 20px;
+}
+
+.chatNoti {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cNotx {
+  width: 100%;
+  color: #fff;
+  text-align-last: left;
+  padding: 17px 20px;
+  border-radius: 10px;
+}
+.closed {
+  @include gradientCust(left);
+}
+.completed {
+  background-color: $green;
+}
+.msgx {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.msgBox {
+  width: 400px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid $main;
+  box-shadow: 0px 4px 19px 0px rgba(34, 105, 245, 0.3);
+  p {
+    font-size: 0.8em;
+  }
+}
+.msgData {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  span {
+    font-size: 0.8em;
+    color: $lightblack;
+    &:nth-child(1) {
+      font-size: 0.7em;
+    }
+  }
+}
+.sentMsg {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+.receivedMsg {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+.msgBtns {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.btn2 {
+  width: fit-content;
+  height: 40px;
+  @include flex();
+  cursor: pointer;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 1em;
+  background-color: $main;
+  padding: 0 30px;
+  &:disabled {
+    opacity: 0.5;
+  }
+  gap: 10px;
+  img {
+    width: 20px;
+    object-fit: contain;
+  }
+}
+.btn2.w15 {
+  img {
+    width: 15px;
+    object-fit: contain;
+  }
+}
+.redC {
+  background: rgba(148, 43, 43, 1);
+}
+.chatCont {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 730px);
+  gap: 20px;
+}
+
+.topCox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cicx {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.cix {
+  @include flex();
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  span {
+    position: relative;
+    @include flex();
+    @include circle(50px);
+    color: $main;
+    font-family: f500;
+    font-size: 1.3em;
+    img {
+      position: absolute;
+      width: 50px;
+      object-fit: contain;
+    }
+  }
+  p {
+    color: $main;
+    font-size: 0.9em;
+  }
+}
+.inx {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $main;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 10px;
+  h2 {
+    font-family: f400;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 1.2em;
+  }
+  p {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9em;
+  }
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: disc;
+    gap: 5px;
+    li {
+      color: #fff;
+      font-size: 0.9em;
+    }
+  }
+}
+.lisItx {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $main;
+  padding: 30px 20px;
+  border-radius: 10px;
+  gap: 25px;
+  h2 {
+    font-family: f400;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 1.2em;
+  }
+}
+.itxF {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  span {
+    color: #fff;
+    &:nth-child(1) {
+      font-family: f500;
+    }
+    &:nth-child(2) {
+      font-family: f300;
+      font-size: 0.9em;
+    }
+  }
+  a {
+    padding: 0 20px;
+    height: 30px;
+    color: #fff;
+    font-family: f300;
+    @include flex();
+    border: 1px solid #fff;
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 1450px) {
+  .chatInner {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .chatCont {
+    width: 700px;
+  }
+}
+@media (max-width: 1050px) {
+  .chatCont {
+    width: 100%;
+  }
+  .chatMes {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .msgBox {
+    width: calc(100% - 30px);
+  }
+}
+.sendText {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 20px;
+  padding-top: 30px;
+  textarea {
+    @include noBorder();
+    resize: none;
+    display: flex;
+    width: 100%;
+    height: 130px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 1em;
+    box-shadow: 0px 4px 19px 0px rgba(34, 105, 245, 0.3);
+  }
+}
+.dcenter {
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+}
+.dontW {
+  display: flex;
+  width: 100%;
+  @include defaultBox();
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  @include gradientCust(left);
+  font-size: 1.1em;
+}
+.acXInf {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  img {
+    width: 30px;
+  }
+  h3 {
+    color: #fff;
+  }
+  span {
+    font-size: 0.8em;
+  }
+}
+.txar15 {
+  @include noBorder();
+  resize: none;
+  display: flex;
+  width: 100%;
+  height: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 1em;
+  box-shadow: 0px 4px 19px 0px rgba(34, 105, 245, 0.3);
+  margin-top: 20px;
+  border: 1px solid $main;
+}
+.jcs {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.df {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+@media (max-width: 1050px) {
+  .df {
+    flex-wrap: wrap;
+    gap: 20px;
+    .btn2 {
+      flex-grow: 1;
+    }
+  }
+  .jcs {
+    .btn2 {
+      flex-grow: 1;
+    }
+  }
+}
+.payRefx {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.redBac {
+  background: rgba(255, 0, 0, 1);
+}
+.empty {
+  border: 1px solid $main;
+  color: transparent;
+}
+.checkInbx {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 0.9em;
+  input {
+    width: 17px;
+    height: 17px;
+    object-fit: contain;
+  }
+}
+.tdxgll {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ekx {
+  color: $main;
+  span {
+    font-family: f600;
+  }
+}
+.pt0 {
+  padding-top: 0 !important;
+}
+.radiosxxz1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 10px;
+}
+.rdiozc {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.radx {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  input {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media (max-width: 370px) {
+  .radiosxxz1 {
+    font-size: 0.8em;
+  }
+}
+.toLeft {
+  @include gradientCust(left);
+}
+.toRight {
+  @include gradientCust(right);
+}
+.actionTools {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.5em;
+  .fa-pen-to-square {
+    color: $main;
+    cursor: pointer;
+  }
+  .fa-trash-can {
+    cursor: pointer;
+    color: #ff0000;
+  }
+}
+.addFormx12 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  h3 {
+    color: $main;
+    font-family: f400;
+  }
+  gap: 10px;
+  padding-bottom: 70px;
+  textarea {
+    @include noBorder();
+    resize: none;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 1em;
+    border: 1px solid $main;
+    box-shadow: 0px 4px 19px 0px rgba(34, 105, 245, 0.3);
+  }
+  button {
+    margin-top: 20px;
+  }
+}
+.popUpCx {
+  @include flex();
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  overflow-y: scroll;
+  padding: 20px;
+  z-index: 10;
+  background-color: #ffffff41;
+  backdrop-filter: blur(10px);
+  top: 0;
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+.popContx {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  position: relative;
+  padding: 30px 20px 20px 20px;
+  border-radius: 10px;
+  border: 1px solid $main;
+  background-color: #fff;
+  gap: 20px;
+  i {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: $main;
+    font-size: 1.2em;
+  }
+  .input2 {
+    padding-top: 10px;
+    input {
+      height: 40px;
+      font-size: 0.9em;
+      border-radius: 5px;
+    }
+  }
+}
+.cdkgbtnx {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  .btn2 {
+    height: 30px;
+    width: 120px;
+    padding: 0;
+  }
+}
+.cgcsx {
+  h3 {
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+}
+.cntfdf {
+  padding-top: 20px;
+  justify-content: center;
+}
+@media (max-width: 550px) {
+  .popContx {
+    width: 100%;
+  }
+}
+.toolsOptin {
+  @include flex();
+  gap: 10px;
+  .fa-trash-can {
+    font-size: 1.3em;
+    color: #ff0000;
+    cursor: pointer;
+  }
+  .fa-pen-to-square {
+    font-size: 1.3em;
+    cursor: pointer;
+    color: $main;
+  }
+}
+.twoInputs {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+.inputInw50 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  .input2 {
+    input,
+    select {
+      color: $gray !important;
+    }
+  }
+}
+
+.btnkdfd65 {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  padding-top: 40px;
+}
+@media (max-width: 650px) {
+  .twoInputs {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .inputInw50 {
+    width: 100%;
+    .input2 {
+      padding-top: 15px;
+    }
+  }
+}
+.forcx {
+  width: 100%;
+}
+.manyInx {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 30px;
+}
+.smalCjx {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.ckInxx1 {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.xfdf5 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  input {
+    width: 17px;
+    height: 17px;
+  }
+}
+.tbxuse,
+.uservjld {
+  @include flex();
+}
+.uservjld {
+  flex-direction: column;
+  img {
+    width: 100px;
+    object-fit: contain;
+  }
+  h1 {
+    color: #000;
+  }
+  span {
+    font-size: 0.8em;
+  }
+}
+.hdbh5 {
+  width: 100%;
+  @include defaultBox();
+  @include gradientCust(left);
+  h1 {
+    color: #fff;
+    font-family: f400;
+  }
+}
+@media (max-width: 600px) {
+  .hdbh5 {
+    h1 {
+      font-size: 1.3em;
+    }
+  }
+}
+.sdsdfsds {
+  padding-bottom: 20px;
+  span {
+    color: #000;
+    font-family: f600;
+    display: inline-flex;
+  }
+}
+.mianPopCOnt {
+  width: 100%;
+  display: flex;
+}
+.firtxPo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  flex-shrink: 1;
+}
+.fx1 {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+.fx11 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: f500;
+  font-size: 0.9em;
+}
+.fx22 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 0.9em;
+}
+.copyTex.fx22 {
+  color: #000;
+  gap: 5px;
+}
+.wa {
+  width: auto;
+}
+.addrPox {
+  display: flex;
+  img {
+    width: 20px;
+    object-fit: contain;
+  }
+}
+.gap20 {
+  gap: 20px;
+}
+.dfsb {
+  justify-content: space-between;
+  width: 550px;
+}
+
+.jcr {
+  justify-content: right !important;
+}
+.formInndsc {
+  @include flex();
+  padding: 50px 0;
+}
+@media (max-width: 750px) {
+  #pop3 {
+    position: relative;
+    height: calc(100vh - 50px);
+  }
+  .wa {
+    width: calc(100% - 40px);
+    position: absolute;
+    top: 50px;
+  }
+  .dfsb {
+    width: 100%;
+    flex-direction: column;
+  }
+  .fx1 {
+    flex-wrap: wrap;
+  }
+}
+#cancel{
+  cursor: pointer;
+}
+
+.inpTcsf1{
+  width: 100px;
+  @include noBorder();
+  text-align: center;
+  height: 21px;
+  border-radius: 5px;
+  font-size: .9em;
+  border: 1px solid $main;
+}

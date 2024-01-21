@@ -100,10 +100,10 @@ navInner.innerHTML=`<div class="logo">
   </div>
   <img class="arrow" src="../media/navIcons/arrow-down.png" alt="">
   <ul class="dropMenu dropAcc">
-    <li><a href="##"><i class="fa-solid fa-user"></i>Edit Profile</a></li>
-    <li><a href="##"><i class="fa-solid fa-circle-dollar"></i> Earn Money </a></li>
+    <li><a href="./account-information.html"><i class="fa-solid fa-user"></i>Edit Profile</a></li>
+    <li><a href="./Referral-System-Statistics.html"><i class="fa-solid fa-circle-dollar"></i> Earn Money </a></li>
     <li><a href="./my-orders.html"><i class="fa-solid fa-boxes-stacked"></i>My Orders </a></li>
-    <li><a href="##"><i class="fa-sharp fa-solid fa-dollar-sign"></i>Add Balance </a></li>
+    <li><a href="./add-balance.html"><i class="fa-sharp fa-solid fa-dollar-sign"></i>Add Balance </a></li>
     <li class="LogOut"><a href="##"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out </a></li>
   </ul>
 </div>
