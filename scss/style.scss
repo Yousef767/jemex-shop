@@ -2007,14 +2007,14 @@ nav {
   cursor: pointer;
   gap: 3px;
   position: relative;
-  span{
+  span {
     position: absolute;
     top: -5px;
     right: -5px;
-    padding:1px 3px;
+    padding: 1px 3px;
     background-color: $pink;
     color: #fff;
-    font-size: .8em;
+    font-size: 0.8em;
     border-radius: 4px;
   }
 }
@@ -2298,7 +2298,6 @@ nav {
     }
   }
 }
-
 
 .loaderLogo {
   img {
@@ -4617,6 +4616,10 @@ nav {
   display: flex;
   gap: 5px;
   align-items: center;
+  cursor: pointer;
+  label{
+    cursor: pointer;
+  }
   input {
     width: 17px;
     height: 17px;
@@ -4948,20 +4951,20 @@ nav {
     flex-wrap: wrap;
   }
 }
-#cancel{
+#cancel {
   cursor: pointer;
 }
 
-.inpTcsf1{
+.inpTcsf1 {
   width: 100px;
   @include noBorder();
   text-align: center;
   height: 21px;
   border-radius: 5px;
-  font-size: .9em;
+  font-size: 0.9em;
   border: 1px solid $main;
 }
-.w17{
+.w17 {
   width: 17px !important;
   height: 17px !important;
 }
