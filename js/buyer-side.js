@@ -61,8 +61,7 @@ navInner.innerHTML=`<div class="logo">
     </ul>
   </li>
   <div action="" class="search">
-    <a href="./Request-Products.html">Request Products</a>
-    <img src="../media/navIcons/search.png" alt="">
+    <a href="./my-orders.html"><i class="fa-solid fa-box"></i> My Orders</a>
   </div>
 </ul>
 <div class="linksInner restLinks">

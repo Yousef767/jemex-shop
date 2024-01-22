@@ -20,9 +20,6 @@ navInner.innerHTML=`
     <a href="./withrawals-history.html"><img src="../media/navIcons/wids.png" alt=""> Withdrawals </a>
   </li>
   <li class="ml">
-    <a href="./Request-Products.html"><img src="../media/navIcons/search-light.png" alt=""> Requsted Products </a>
-  </li>
-  <li class="ml">
     <a href="./buyer-news.html"><img src="../media/navIcons/news.png" alt=""> Buyer News </a>
   </li>
   <li class="ml">

@@ -19,13 +19,7 @@ navInner.innerHTML=`
           </li>
           <li class="ml"><a href="./settings.html"><img src="../media/navIcons/settings.png" alt=""> Settings </a>
           </li>
-          <li class="ml"><a href="##"><img src="../media/navIcons/chart.png" alt=""> Top Sellers </a></li>
-        </ul>
-        <ul class="listLinks pb20">
-          <h3 class="pl10">Services</h3>
-          <div action="" class="search">
-            <a href="../Buyer-Pages/Request-Products.html">Request Products</a>
-          </div>
+          <li class="ml"><a href="./top-sellers.html"><img src="../media/navIcons/chart.png" alt=""> Top Sellers </a></li>
         </ul>
         <ul class="listLinks pb0">
           <h3 class="pl10">Items</h3>

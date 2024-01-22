@@ -366,13 +366,15 @@ nav::-webkit-scrollbar {
 }
 .search a {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  display: flex;
   align-items: center;
   width: 240px;
   border: none;
   outline: none;
   background-color: transparent;
-  padding-left: 50px;
-  padding-right: 10px;
   height: 50px;
   border: 1px solid #fff;
   border-radius: 10px;
@@ -388,10 +390,9 @@ nav::-webkit-scrollbar {
   color: #fff;
   font-family: f300;
 }
-.search img {
-  position: absolute;
-  left: 20px;
-  width: 20px;
+.search i {
+  color: #fff;
+  font-size: 1em;
 }
 
 .restLinks {
@@ -647,6 +648,7 @@ nav::-webkit-scrollbar {
   height: 10px;
   -o-object-fit: contain;
      object-fit: contain;
+  cursor: pointer;
 }
 .tg tbody tr td {
   height: 60px;
@@ -685,6 +687,7 @@ nav::-webkit-scrollbar {
   height: 10px;
   -o-object-fit: contain;
      object-fit: contain;
+  cursor: pointer;
 }
 .tg2 tbody tr td {
   height: 60px;
@@ -732,6 +735,7 @@ nav::-webkit-scrollbar {
 
 .f600 {
   font-family: f600;
+  vertical-align: middle !important;
 }
 
 .main {
@@ -4263,6 +4267,12 @@ nav::-webkit-scrollbar {
   cursor: pointer;
 }
 
+.delPink {
+  color: #ff4857;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
 .fa-eye,
 .fa-pen {
   color: #000;
@@ -5237,4 +5247,9 @@ nav::-webkit-scrollbar {
   border-radius: 5px;
   font-size: 0.9em;
   border: 1px solid #1f65f0;
+}
+
+.w17 {
+  width: 17px !important;
+  height: 17px !important;
 }/*# sourceMappingURL=style.css.map */

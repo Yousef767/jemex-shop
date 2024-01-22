@@ -12,17 +12,11 @@ navInner.innerHTML = `
             <a href="##"><img src="../media/navIcons/cart.png" alt=""> Sales </a>
           </li>
           <li class="ml">
-            <a href="##"><img src="../media/navIcons//alert.png" alt=""> Reports </a>
+            <a href="./tickets.html"><img src="../media/navIcons//alert.png" alt=""> Reports </a>
           </li>
-          <li class="ml"><a href="##"><img src="../media/navIcons/tickets.png" alt=""> Tickets </a>
+          <li class="ml"><a href="./reports.html"><img src="../media/navIcons/tickets.png" alt=""> Tickets </a>
           </li>
-          <li class="ml"><a href="##"><img src="../media/navIcons/chart.png" alt=""> Top Sellers </a></li>
-        </ul>
-        <ul class="listLinks pb20">
-          <h3 class="pl10">Services</h3>
-          <div action="" class="search">
-            <a href="##">Request Products</a>
-          </div>
+          <li class="ml"><a href="./top-sellers.html"><img src="../media/navIcons/chart.png" alt=""> Top Sellers </a></li>
         </ul>
         <ul class="listLinks pb0">
           <h3 class="pl10">Items</h3>

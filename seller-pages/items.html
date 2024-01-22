@@ -23,6 +23,13 @@
 
     <!-- Start Main Content -->
     <div class="mainContent">
+      <h1 class="hdx p0 gc2x">
+        Shells
+        <div class="SectionsNa">
+          <a  href="./Shells.html">General</a>
+          <a class="active" href="./items.html">All Shells</a>
+        </div>
+      </h1>
       <div class="tabelInner gap30">
         <div class="filterType3">
           <form class="filterBox fsREa">
@@ -37,10 +44,11 @@
             <button><img src="../media/icons/search.png" alt=""></button>
           </form>
         </div>
-        <div class="table">
+        <form class="table">
           <table class="tg2">
             <thead>
               <tr>
+                <th><button type="button" class="buy">Select All</button></th>
                 <th>ID</th>
                 <th>Shell</th>
                 <th>Password <img src="../media/icons/Frame293.png" alt=""></th>
@@ -54,47 +62,12 @@
                 <th>Check Zip</th>
                 <th>Check</th>
                 <th>Added On</th>
-                <th></th>
+                <th><i class="fa-regular fa-trash-can delPink"></i></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>1596</td>
-                <td>4123</td>
-                <td>2421s$%</td>
-                <td class="f600">
-                  <img class="country" src="../media/icons/nl.png.png" alt="">NL
-                </td>
-                <td>MacOS</td>
-                <td>Limenet</td>
-                <td>N/A</td>
-                <td>$0.00</td>
-                <td><div class="smallBtn pinkBac m0a">On hold</div></td>
-                <td><a class="check" href="##">Check</a></td>
-                <td><a class="check" href="##">Check</a></td>
-                <td><a class="check" href="##">Check</a></td>
-                <td>2023-12-11 00:12:56</td>
-                <td><i class="fa-regular fa-trash-can delMain"></i></td>
-              </tr>
-              <tr>
-                <td>1596</td>
-                <td>4123</td>
-                <td>2421s$%</td>
-                <td class="f600">
-                  <img class="country" src="../media/icons/nl.png.png" alt="">NL
-                </td>
-                <td>MacOS</td>
-                <td>Limenet</td>
-                <td>N/A</td>
-                <td>$0.00</td>
-                <td><div class="smallBtn pinkBac m0a">On hold</div></td>
-                <td><a class="check" href="##">Check</a></td>
-                <td><a class="check" href="##">Check</a></td>
-                <td><a class="check" href="##">Check</a></td>
-                <td>2023-12-11 00:12:56</td>
-                <td><i class="fa-regular fa-trash-can delMain"></i></td>
-              </tr>
-              <tr>
+                <td><input class="w17" type="checkbox"></td>
                 <td>1596</td>
                 <td>4123</td>
                 <td>2421s$%</td>
@@ -114,7 +87,7 @@
               </tr>
             </tbody>
           </table>
-        </div>
+        </form>
       </div>
       <!-- Start Pagintaion -->
       <div class="pagination">
@@ -138,5 +111,6 @@
 
 </body>
 <script src="../js/seller-side.js"></script>
+<script src="../js/activeSections.js"></script>
 
 </html>
