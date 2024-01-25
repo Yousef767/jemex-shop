@@ -151,10 +151,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  max-width: 2000px;
-  margin: 0 auto;
-}
 
 a {
   text-decoration: none;
@@ -613,7 +609,7 @@ nav {
 .mainBack {
   border: none;
   background-color: $main;
-  color: #fff;
+  color: #fff !important;
   gap: 5px;
   img {
     width: 20px;
@@ -1988,9 +1984,13 @@ nav {
 }
 .mainBac {
   background-color: $main;
+  color: #fff !important;
+  border: none !important;
 }
 .pinkBac {
   background-color: $pink;
+  color: #fff !important;
+  border: none !important;
 }
 .blackBac {
   background-color: #000;

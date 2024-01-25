@@ -12,9 +12,9 @@ navInner.innerHTML = `
             <a href="##"><img src="../media/navIcons/cart.png" alt=""> Sales </a>
           </li>
           <li class="ml">
-            <a href="./tickets.html"><img src="../media/navIcons//alert.png" alt=""> Reports </a>
+            <a href="./reports.html"><img src="../media/navIcons//alert.png" alt=""> Reports </a>
           </li>
-          <li class="ml"><a href="./reports.html"><img src="../media/navIcons/tickets.png" alt=""> Tickets </a>
+          <li class="ml"><a href="./tickets.html"><img src="../media/navIcons/tickets.png" alt=""> Tickets </a>
           </li>
           <li class="ml"><a href="./top-sellers.html"><img src="../media/navIcons/chart.png" alt=""> Top Sellers </a></li>
         </ul>

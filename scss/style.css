@@ -90,11 +90,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  max-width: 2000px;
-  margin: 0 auto;
-}
-
 a {
   text-decoration: none;
   color: #3a3a49;
@@ -596,7 +591,7 @@ nav::-webkit-scrollbar {
 .mainBack {
   border: none;
   background-color: #1f65f0;
-  color: #fff;
+  color: #fff !important;
   gap: 5px;
 }
 .mainBack img {
@@ -2041,10 +2036,14 @@ nav::-webkit-scrollbar {
 
 .mainBac {
   background-color: #1f65f0;
+  color: #fff !important;
+  border: none !important;
 }
 
 .pinkBac {
   background-color: #ff4857;
+  color: #fff !important;
+  border: none !important;
 }
 
 .blackBac {
