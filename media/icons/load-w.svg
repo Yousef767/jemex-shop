@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 200 200" viewPort="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<circle cx="50" cy="50" r="40" fill="none" stroke="#ccc" stroke-opacity=".6" stroke-width="10"/>
+<path d="m10 50a40 40 0 1 1 80 0" fill="none" stroke="#ccc" stroke-width="10">
+<animateTransform attributeName="transform" attributeType="xml" dur="1s" from="0 50 50" repeatCount="indefinite" to="360 50 50" type="rotate"/>
+</path>
+</svg>

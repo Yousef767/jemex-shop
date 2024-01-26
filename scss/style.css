@@ -738,12 +738,51 @@ nav::-webkit-scrollbar {
 }
 
 .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   border: 1px solid #1f65f0;
   color: #1f65f0;
-  padding: 7px 10px;
+  padding: 0 15px;
+  height: 30px;
   border-radius: 7px;
   font-size: 0.9em;
   font-family: f600;
+  text-transform: capitalize;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.check img {
+  width: 25px;
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.check i {
+  font-size: 1.2em;
+}
+.check .fa-circle-check {
+  color: #fff;
+}
+
+.checking {
+  border: none;
+  background-color: #00D4E7;
+  color: #fff;
+}
+
+.good {
+  background-color: #31C072;
+  color: #fff;
+  border: none;
+}
+
+.bad {
+  background-color: #d63a3d;
+  color: #fff;
+  border: none;
 }
 
 .buy {
